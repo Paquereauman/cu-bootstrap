@@ -1,17 +1,17 @@
-# IP Unlocker — téléchargements
+# IP Unlocker — Downloads
 
-Toujours la dernière version :
+Always the latest version:
 
-| Ordinateur | Télécharger |
+| Computer | Download |
 |---|---|
 | **Windows 10 / 11** | [⬇ IP-Unlocker-Windows.exe](https://github.com/Paquereauman/cu-bootstrap/releases/latest/download/IP-Unlocker-Windows.exe) |
 | **Mac M1, M2, M3, M4** (Apple Silicon) | [⬇ IP-Unlocker-Mac-AppleSilicon.zip](https://github.com/Paquereauman/cu-bootstrap/releases/latest/download/IP-Unlocker-Mac-AppleSilicon.zip) |
 | **Mac Intel** | [⬇ IP-Unlocker-Mac-Intel.zip](https://github.com/Paquereauman/cu-bootstrap/releases/latest/download/IP-Unlocker-Mac-Intel.zip) |
 
-**Quel Mac ?** Menu  › À propos de ce Mac : « Puce Apple M… » = Apple Silicon, « Processeur Intel » = Intel.
+**Which Mac?**  menu › About This Mac: "Chip Apple M…" = Apple Silicon, "Processor Intel" = Intel.
 
-**Mac (macOS 15) :** dézippez, ouvrez Terminal, tapez `bash ` puis glissez le fichier *Installer IP Unlocker.command* dans la fenêtre et appuyez sur Entrée (aucun mot de passe).
+**Mac (macOS 15):** unzip, open Terminal, type `bash ` (with a space), drag the file *Installer IP Unlocker.command* into the window and press Enter (no password needed).
 
-**Déjà installé ?** Réglages › Mise à jour › Vérifier.
+**Already installed?** Settings › Updates › Check.
 
-Toutes les versions : [Releases](https://github.com/Paquereauman/cu-bootstrap/releases)
+All versions: [Releases](https://github.com/Paquereauman/cu-bootstrap/releases)
