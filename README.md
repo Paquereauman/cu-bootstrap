@@ -2,7 +2,7 @@
 
 **IP Unlocker** is a simple, fast **VPN and proxy client for Windows 10/11 and macOS** (Apple Silicon and Intel), built on **Xray-core** and **sing-box**. Paste your server link (**VLESS, Reality, VMess, Trojan, Shadowsocks, Hysteria2, TUIC, AnyTLS**) or a **Clash subscription**, press *Connect*: the app picks the fastest node, protects the whole computer with a **TUN** adapter and a **kill switch**, and keeps Chinese sites fast by sending them **direct**.
 
-Available in **English, 中文, Français**.
+Interface in **English, Chinese and French**.
 
 [![Latest release](https://img.shields.io/github/v/release/Paquereauman/cu-bootstrap?label=latest&color=2ea44f)](https://github.com/Paquereauman/cu-bootstrap/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Paquereauman/cu-bootstrap/total?color=blue)](https://github.com/Paquereauman/cu-bootstrap/releases)
@@ -60,18 +60,4 @@ Engines: [Xray-core](https://github.com/XTLS/Xray-core) and [sing-box](https://g
 
 ---
 
-## 中文
-
-**IP Unlocker** 是一款适用于 **Windows 10/11 和 macOS**（Apple Silicon 与 Intel）的简单快速的 **VPN / 代理客户端**，基于 **Xray** 与 **sing-box**。粘贴服务器链接（**VLESS、Reality、VMess、Trojan、Shadowsocks、Hysteria2、TUIC、AnyTLS**）或 **Clash 订阅**，点击连接即可：自动选择最快节点，**TUN 全局模式**加**断网保护（Kill Switch）**，国内网站（B站、抖音、爱奇艺、腾讯视频、微信、淘宝、百度、DeepSeek、豆包、Kimi…）**直连**不变慢。支持去广告、住宅 IP 出口、Claude / ChatGPT 账号保护、游戏模式（兼容 UU、雷神、迅游加速器）、自动更新。界面支持中文。
-
-下载：见上方表格（Windows / Mac）。
-
-## Français
-
-**IP Unlocker** est un **client VPN / proxy pour Windows 10/11 et macOS** (Apple Silicon et Intel), basé sur **Xray** et **sing-box**. Collez votre lien serveur (**VLESS, Reality, VMess, Trojan, Shadowsocks, Hysteria2, TUIC, AnyTLS**) ou un **abonnement Clash**, cliquez sur *Connecter* : l'appli choisit le nœud le plus rapide, protège tout l'ordinateur (**mode TUN** + **kill switch**) et laisse les sites chinois **en direct** pour qu'ils restent rapides. Blocage des pubs, sortie par **proxy résidentiel**, protection des comptes **Claude / ChatGPT**, mode jeu, mises à jour automatiques. Interface en français.
-
-Téléchargement : voir le tableau ci-dessus.
-
----
-
-<sub>Keywords: VPN client Windows, VPN Mac, Xray client, sing-box GUI, v2ray client, VLESS Reality client, Hysteria2 client, Clash subscription, TUN mode, kill switch, split tunneling China, bypass GFW, 翻墙, 科学上网, VPN 客户端, 机场订阅, Claude in China, ChatGPT in China.</sub>
+<sub>Keywords: VPN client Windows, VPN Mac, Xray client, sing-box GUI, v2ray client, VLESS Reality client, Hysteria2 client, Clash subscription, TUN mode, kill switch, split tunneling China, bypass GFW, Claude in China, ChatGPT in China.</sub>
