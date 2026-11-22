@@ -27,6 +27,25 @@ Always the latest version:
 
 All versions: [Releases](https://github.com/Paquereauman/cu-bootstrap/releases)
 
+## 🧭 How it works: 2 layers
+
+```mermaid
+flowchart LR
+    PC["💻 Your apps & browsers"] --> TUN["IP Unlocker<br/>TUN adapter + router<br/>(sing-box)"]
+    TUN -- "Chinese sites<br/>Bilibili, Baidu, Doubao…" --> CN["🇨🇳 Direct<br/>fast, no VPN"]
+    TUN -- "ads & trackers" --> X["⛔ Blocked"]
+    TUN -- "everything else" --> CORE["Xray core"]
+    CORE --> L1["Layer 1: VPN node<br/>Reality · Hysteria2 · Trojan…<br/>(Hong Kong, Japan, Singapore…)"]
+    L1 --> L2["Layer 2: residential exit<br/>2nd IP, home / ISP address<br/>(Taiwan, Japan…)"]
+    L2 --> WEB["🌍 Sites see a clean<br/>residential IP<br/>Claude, ChatGPT, Google…"]
+    L1 -. "YouTube video, P2P, WhatsApp<br/>(saves residential traffic)" .-> WEB2["🌍 Internet via<br/>the VPN node's IP"]
+```
+
+- **Layer 1, the VPN node**, gets you out of the local network: an encrypted, hard-to-detect tunnel (VLESS Reality, Hysteria2…). The app tests every node and always uses the fastest one, with a standby node ready.
+- **Layer 2, the residential exit** (optional): the traffic leaves the VPN node through a residential / ISP proxy, so websites see an ordinary home IP instead of a datacenter IP. This is what keeps accounts such as **Claude** safe: Claude is only allowed through this 2nd IP.
+- **Kill switch:** if layer 1 stops answering, foreign traffic is blocked instead of leaking your real IP.
+- **Direct lane:** Chinese sites never enter the tunnel, so they stay as fast as without a VPN.
+
 ## ✨ Features
 
 - **One-click connect** — paste a `vless://`, `vmess://`, `trojan://`, `ss://`, `hysteria2://`, `tuic://` or `anytls://` link, or import a **Clash / Mihomo YAML subscription**.
@@ -36,7 +55,8 @@ All versions: [Releases](https://github.com/Paquereauman/cu-bootstrap/releases)
 - **Chinese sites go direct (split tunneling)** — Bilibili, Douyin, iQiyi, Tencent Video, WeChat, Taobao, Baidu, DeepSeek, Doubao, Kimi… stay fast and keep their full Chinese catalogues.
 - **Ad & tracker blocking** in every app and browser.
 - **Residential exit proxies** — chain a residential / ISP proxy after the VPN node for a clean exit IP (videos and P2P can skip it to save traffic).
-- **Claude account protection** — Claude only goes through the VPN, and is blocked on servers in a region Anthropic does not serve; ChatGPT, Gemini and Google always go through the VPN too.
+- **Claude account protection** — Claude only goes through the VPN and a residential exit (2nd IP), and is blocked on servers in a region Anthropic does not serve; ChatGPT, Gemini and Google always go through the VPN too.
+- **Repair browsers** — one click fixes slow Chinese sites in Brave, Chrome and Edge (DNS and browser settings reset, tabs restored).
 - **Privacy hardening** — WebRTC leak protection, WebGL / GPU fingerprint hiding, time zone and browser language matched to the exit country, QUIC blocking.
 - **Game mode** — games skip the VPN; works alongside UU, Leigod and Xunyou accelerators.
 - **Share to phone** — QR code for v2rayNG, Hiddify or Streisand.
