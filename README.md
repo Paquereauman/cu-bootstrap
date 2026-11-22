@@ -29,17 +29,7 @@ All versions: [Releases](https://github.com/Paquereauman/cu-bootstrap/releases)
 
 ## 🧭 How it works: 2 layers
 
-```mermaid
-flowchart LR
-    PC["💻 Your apps & browsers"] --> TUN["IP Unlocker<br/>TUN adapter + router<br/>(sing-box)"]
-    TUN -- "Chinese sites<br/>Bilibili, Baidu, Doubao…" --> CN["🇨🇳 Direct<br/>fast, no VPN"]
-    TUN -- "ads & trackers" --> X["⛔ Blocked"]
-    TUN -- "everything else" --> CORE["Xray core"]
-    CORE --> L1["Layer 1: VPN node<br/>Reality · Hysteria2 · Trojan…<br/>(Hong Kong, Japan, Singapore…)"]
-    L1 --> L2["Layer 2: residential exit<br/>2nd IP, home / ISP address<br/>(Taiwan, Japan…)"]
-    L2 --> WEB["🌍 Sites see a clean<br/>residential IP<br/>Claude, ChatGPT, Google…"]
-    L1 -. "YouTube video, P2P, WhatsApp<br/>(saves residential traffic)" .-> WEB2["🌍 Internet via<br/>the VPN node's IP"]
-```
+<p align="center"><img src="docs/how-it-works.svg" alt="How IP Unlocker works: TUN router, Chinese sites direct, layer 1 VPN node, layer 2 residential exit" width="775"></p>
 
 - **Layer 1, the VPN node**, gets you out of the local network: an encrypted, hard-to-detect tunnel (VLESS Reality, Hysteria2…). The app tests every node and always uses the fastest one, with a standby node ready.
 - **Layer 2, the residential exit** (optional): the traffic leaves the VPN node through a residential / ISP proxy, so websites see an ordinary home IP instead of a datacenter IP. This is what keeps accounts such as **Claude** safe: Claude is only allowed through this 2nd IP.
